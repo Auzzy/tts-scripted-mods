@@ -302,18 +302,18 @@ function onObjectDrop(player_color, dropped_object)
     end
 
     displayPlayerScores(playerScores)
+
+    endRoundRegion = getObjectFromGUID("dc40bd")
     step2 = false
     for _, score in pairs(playerScores) do
         if score >= 7 then
-            resourceButtonRegion = getObjectFromGUID("2457b6")
-            resourceButtonRegion.call("setCurrentStep", 2)
+            endRoundRegion.call("setCurrentStep", 2)
             step2 = true
             break
         end
     end
     if not step2 then
-        resourceButtonRegion = getObjectFromGUID("2457b6")
-        resourceButtonRegion.call("setCurrentStep", 1)
+        endRoundRegion.call("setCurrentStep", 1)
     end
 end
 
