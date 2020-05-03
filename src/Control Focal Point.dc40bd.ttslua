@@ -1,0 +1,180 @@
+function onload(saved_data)
+    deck = getObjectFromGUID("65b2c8")
+    resourceButtonRegion = getObjectFromGUID("2457b6")
+
+    marketZones = {
+        getObjectFromGUID("8520f3"),
+        getObjectFromGUID("032a82"),
+        getObjectFromGUID("16b504"),
+        getObjectFromGUID("9d7327"),
+        getObjectFromGUID("cd9b34"),
+        getObjectFromGUID("1c3d82"),
+        getObjectFromGUID("9d12fd"),
+        getObjectFromGUID("8c1819")
+    }
+
+    step3Guid = "e36b67"
+    pp13Guid = "9f3848"
+    startingPowerPlantGuids = {"4f9859", "0e9631", "fc6c5f", "eea3b2", "c4995b", "7ab381", "c5d33f", "2dcb73"}
+
+    loadPowerPlantInfo()
+
+    self.createButton({label="Start", click_function="startGame", function_owner=self, position={4.0, 0.1, 0.0}, rotation={0, 180, 0}, height=600, width=1400, font_size=280})
+    self.createButton({label="Draw", click_function="drawPowerPlant", function_owner=self, position={0.0, 0.5, 0.0}, rotation={0, 180, 0}, height=600, width=1400, font_size=280})
+    self.createButton({label="Bureaucracy", click_function="performBureaucracy", function_owner=self, position={-4.0, 0.1, 0.0}, rotation={0, 180, 0}, height=600, width=1400, font_size=280})
+end
+
+function performBureaucracy()
+    adjustMarketHighest()
+    resourceButtonRegion.call("countResources")
+end
+
+function loadPowerPlantInfo()
+    deckContents = {}
+    -- Need to track all power plants separately for lookup by GUID since the
+    -- Number attribute is not available when loaded from Zone.getObjects()
+    allPowerPlants = {}
+    for _, card in pairs(JSON.decode(deck.getJSON()).ContainedObjects) do
+        deckContents[card.GUID] = card
+        allPowerPlants[card.GUID] = card
+    end
+end
+
+function startGame()
+    step3DeckList = {}
+
+    for index, ppGuid in pairs(startingPowerPlantGuids) do
+        deck.takeObject({
+            position = marketZones[index].getPosition(),
+            flip = true,
+            guid = ppGuid
+        })
+    end
+
+    removePowerPlants()
+end
+
+function removePowerPlants()
+    local toRemove = nil
+    if #getSeatedPlayers() < 4 then
+        toRemove = 8
+    elseif #getSeatedPlayers() == 4 then
+        toRemove = 4
+    else
+        toRemove = 0
+    end
+
+    for k = 1, toRemove do
+        -- The index accepted by Object.takeObject is 0-indexed.
+        local deckIndex = nil
+        repeat
+            deckIndex = math.random(1, #deck.getObjects() - 1)
+        until deck.getObjects()[deckIndex + 1].guid != step3Guid
+
+        local obj = deck.takeObject({
+            index = deckIndex
+        })
+        obj.destruct()
+    end
+end
+
+
+function adjustMarketHighest()
+    local ppMarket = getPowerPlantMarket()
+    local highestPlant = table.remove(ppMarket, 8)
+    deck.putObject(highestPlant)
+
+    step3DeckList[highestPlant.guid] = true
+
+    addNewPlantToMarket(ppMarket)
+end
+
+function adjustMarketLowest()
+    local ppMarket = getPowerPlantMarket()
+    local lowestPlant = table.remove(ppMarket, 1)
+    lowestPlant.destruct()
+
+    addNewPlantToMarket(ppMarket)
+end
+
+function drawPowerPlant()
+    local ppMarket = getPowerPlantMarket()
+    if #ppMarket < 8 then
+        addNewPlantToMarket(ppMarket)
+    end
+end
+
+function deckTopGuid()
+    for _, card in ipairs(deck.getObjects()) do
+        guid = card.guid
+        if not step3DeckList[guid] and (guid != step3Guid or #deck.getObjects() <= len(step3DeckList) + 1) then
+            return guid
+        end
+    end
+end
+
+function addNewPlantToMarket(ppMarket)
+    local pp13Card = deckContents[pp13Guid]
+    local nextCard = nil
+    local nextCardGuid = nil
+    if pp13Card then
+        nextCard = pp13Card
+    else
+        nextCardGuid = deckTopGuid()
+        nextCard = deckContents[nextCardGuid]
+    end
+
+    if nextCardGuid == step3Guid then
+        resourceButtonRegion.call("setCurrentStep", 3)
+    end
+
+    -- Insert the new power plant into the market
+    for index = #ppMarket, 1, -1 do
+        local cardObj = ppMarket[index]
+        local card = allPowerPlants[cardObj.guid]
+        if card.Number > nextCard.Number then
+            ppMarket[index + 1] = card
+        else
+            ppMarket[index + 1] = nextCard
+            break
+        end
+    end
+
+    -- Move the power plant cards based on the new list above, and draw the new card to its appropriate place.
+    for index, card in ipairs(ppMarket) do
+        if card == nextCard then
+            deck.takeObject({
+                position = marketZones[index].getPosition(),
+                flip = true,
+                guid = card.GUID
+            })
+            deckContents[card.GUID] = nil
+        else
+            card.setPositionSmooth(marketZones[index].getPosition(), false, false)
+        end
+    end
+end
+
+function getPowerPlantMarket()
+    local ppMarket = {}
+    for _, marketZone in ipairs(marketZones) do
+        for _, obj in ipairs(marketZone.getObjects()) do
+            if obj.tag == "Card" then
+                table.insert(ppMarket, obj)
+            end
+        end
+    end
+    return ppMarket
+end
+
+function len(obj)
+    if type(obj) == "string" then
+        return string.len(obj)
+    elseif type(obj) == "table" then
+        count = 0
+        for _, _ in pairs(obj) do
+            count = count + 1
+        end
+        return count
+    end
+end
