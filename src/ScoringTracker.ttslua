@@ -1,0 +1,328 @@
+function loadScoringTracker()
+    brownCityZones = {
+        getObjectFromGUID("891417"),
+        getObjectFromGUID("fbefc7"),
+        getObjectFromGUID("87714a"),
+        getObjectFromGUID("139681"),
+        getObjectFromGUID("6138ed"),
+        getObjectFromGUID("769cc0"),
+        getObjectFromGUID("f4ef3e")
+    }
+
+    yellowCityZones = {
+        getObjectFromGUID("b48bb1"),
+        getObjectFromGUID("49110a"),
+        getObjectFromGUID("71771c"),
+        getObjectFromGUID("6395fb"),
+        getObjectFromGUID("9b2714"),
+        getObjectFromGUID("284676"),
+        getObjectFromGUID("c9ec99")
+    }
+
+    greenCityZones = {
+        getObjectFromGUID("cc6ad6"),
+        getObjectFromGUID("6570a0"),
+        getObjectFromGUID("9e9691"),
+        getObjectFromGUID("852231"),
+        getObjectFromGUID("cdeb60"),
+        getObjectFromGUID("7741d2"),
+        getObjectFromGUID("aeaa91")
+    }
+
+    redCityZones = {
+        getObjectFromGUID("5b0aaa"),
+        getObjectFromGUID("36500d"),
+        getObjectFromGUID("8122fe"),
+        getObjectFromGUID("40564e"),
+        getObjectFromGUID("063a8e"),
+        getObjectFromGUID("9da370"),
+        getObjectFromGUID("3a7f59")
+    }
+
+    blueCityZones = {
+        getObjectFromGUID("c8f69c"),
+        getObjectFromGUID("da8adb"),
+        getObjectFromGUID("365e5b"),
+        getObjectFromGUID("580adc"),
+        getObjectFromGUID("606838"),
+        getObjectFromGUID("5b6d7e"),
+        getObjectFromGUID("fa966d")
+    }
+
+    purpleCityZones = {
+        getObjectFromGUID("d91bab"),
+        getObjectFromGUID("159db2"),
+        getObjectFromGUID("439f3e"),
+        getObjectFromGUID("029cfd"),
+        getObjectFromGUID("47c6dc"),
+        getObjectFromGUID("5b2eba"),
+        getObjectFromGUID("c0bc89")
+    }
+
+    scoringTrackZones = {
+        [1] = {
+            [1] = getObjectFromGUID("c64e0d"),
+            [2] = getObjectFromGUID("4283c7"),
+            [3] = getObjectFromGUID("5ce03a"),
+            [4] = getObjectFromGUID("45635d"),
+            [5] = getObjectFromGUID("5ec8b7"),
+            [6] = getObjectFromGUID("dbb266")
+        },
+        [2] = {
+            [1] = getObjectFromGUID("c2f855"),
+            [2] = getObjectFromGUID("b2952d"),
+            [3] = getObjectFromGUID("4d7d89"),
+            [4] = getObjectFromGUID("bfe18e"),
+            [5] = getObjectFromGUID("eab933"),
+            [6] = getObjectFromGUID("9085e5")
+        },
+        [3] = {
+            [1] = getObjectFromGUID("01c2bc"),
+            [2] = getObjectFromGUID("509a67"),
+            [3] = getObjectFromGUID("5c74bd"),
+            [4] = getObjectFromGUID("d40f11"),
+            [5] = getObjectFromGUID("125d94"),
+            [6] = getObjectFromGUID("771f03")
+        },
+        [4] = {
+            [1] = getObjectFromGUID("2f0175"),
+            [2] = getObjectFromGUID("f5299d"),
+            [3] = getObjectFromGUID("fb0ec9"),
+            [4] = getObjectFromGUID("945ea4"),
+            [5] = getObjectFromGUID("44b6aa"),
+            [6] = getObjectFromGUID("27a43f")
+        },
+        [5] = {
+            [1] = getObjectFromGUID("640678"),
+            [2] = getObjectFromGUID("402e93"),
+            [3] = getObjectFromGUID("a5d117"),
+            [4] = getObjectFromGUID("d65ec4"),
+            [5] = getObjectFromGUID("2b9570"),
+            [6] = getObjectFromGUID("ec4528")
+        },
+        [6] = {
+            [1] = getObjectFromGUID("38acf5"),
+            [2] = getObjectFromGUID("24eabc"),
+            [3] = getObjectFromGUID("6ea8c0"),
+            [4] = getObjectFromGUID("bb8ddc"),
+            [5] = getObjectFromGUID("706325"),
+            [6] = getObjectFromGUID("8a6189")
+        },
+        [7] = {
+            [1] = getObjectFromGUID("b7a111"),
+            [2] = getObjectFromGUID("a8e401"),
+            [3] = getObjectFromGUID("4bef3c"),
+            [4] = getObjectFromGUID("8a0f76"),
+            [5] = getObjectFromGUID("85d49f"),
+            [6] = getObjectFromGUID("c14de0")
+        },
+        [8] = {
+            [1] = getObjectFromGUID("3adb67"),
+            [2] = getObjectFromGUID("cc90a1"),
+            [3] = getObjectFromGUID("3918a9"),
+            [4] = getObjectFromGUID("b2b1d6"),
+            [5] = getObjectFromGUID("511367"),
+            [6] = getObjectFromGUID("657140")
+        },
+        [9] = {
+            [1] = getObjectFromGUID("3635f3"),
+            [2] = getObjectFromGUID("706d18"),
+            [3] = getObjectFromGUID("a03b6e"),
+            [4] = getObjectFromGUID("309662"),
+            [5] = getObjectFromGUID("141606"),
+            [6] = getObjectFromGUID("a1720f")
+        },
+        [10] = {
+            [1] = getObjectFromGUID("d5fefe"),
+            [2] = getObjectFromGUID("8bbe64"),
+            [3] = getObjectFromGUID("3fa056"),
+            [4] = getObjectFromGUID("9a06c4"),
+            [5] = getObjectFromGUID("d0729f"),
+            [6] = getObjectFromGUID("95bbb3")
+        },
+        [11] = {
+            [1] = getObjectFromGUID("e813f3"),
+            [2] = getObjectFromGUID("d2c74d"),
+            [3] = getObjectFromGUID("37fedb"),
+            [4] = getObjectFromGUID("98bad5"),
+            [5] = getObjectFromGUID("a2c555"),
+            [6] = getObjectFromGUID("fbd684")
+        },
+        [12] = {
+            [1] = getObjectFromGUID("ca8a6f"),
+            [2] = getObjectFromGUID("515e0a"),
+            [3] = getObjectFromGUID("41eac4"),
+            [4] = getObjectFromGUID("504fd3"),
+            [5] = getObjectFromGUID("f3bba9"),
+            [6] = getObjectFromGUID("77be97")
+        },
+        [13] = {
+            [1] = getObjectFromGUID("37c02a"),
+            [2] = getObjectFromGUID("9d1f6e"),
+            [3] = getObjectFromGUID("25272e"),
+            [4] = getObjectFromGUID("3079e7"),
+            [5] = getObjectFromGUID("a4b5b5"),
+            [6] = getObjectFromGUID("384114")
+        },
+        [14] = {
+            [1] = getObjectFromGUID("c25787"),
+            [2] = getObjectFromGUID("83929e"),
+            [3] = getObjectFromGUID("3b0727"),
+            [4] = getObjectFromGUID("01b6c8"),
+            [5] = getObjectFromGUID("3a15b5"),
+            [6] = getObjectFromGUID("b377f3")
+        },
+        [15] = {
+            [1] = getObjectFromGUID("035d07"),
+            [2] = getObjectFromGUID("d88a63"),
+            [3] = getObjectFromGUID("06bcb7"),
+            [4] = getObjectFromGUID("d4ae77"),
+            [5] = getObjectFromGUID("99da8c"),
+            [6] = getObjectFromGUID("af2272")
+        },
+        [16] = {
+            [1] = getObjectFromGUID("3ca80c"),
+            [2] = getObjectFromGUID("376a9b"),
+            [3] = getObjectFromGUID("3f5dae"),
+            [4] = getObjectFromGUID("f5d0a9"),
+            [5] = getObjectFromGUID("d44fd2"),
+            [6] = getObjectFromGUID("fa2ca3")
+        },
+        [17] = {
+            [1] = getObjectFromGUID("a2008f"),
+            [2] = getObjectFromGUID("cc1eac"),
+            [3] = getObjectFromGUID("b81d22"),
+            [4] = getObjectFromGUID("8648bd"),
+            [5] = getObjectFromGUID("5074ab"),
+            [6] = getObjectFromGUID("ae0a4b")
+        },
+        [18] = {
+            [1] = getObjectFromGUID("0545de"),
+            [2] = getObjectFromGUID("289b69"),
+            [3] = getObjectFromGUID("5359f6"),
+            [4] = getObjectFromGUID("9f184d"),
+            [5] = getObjectFromGUID("48bd82"),
+            [6] = getObjectFromGUID("ba24fd")
+        },
+        [19] = {
+            [1] = getObjectFromGUID("4ab0c5"),
+            [2] = getObjectFromGUID("b2a9c4"),
+            [3] = getObjectFromGUID("3c4590"),
+            [4] = getObjectFromGUID("ff7526"),
+            [5] = getObjectFromGUID("470d28"),
+            [6] = getObjectFromGUID("49d6f7")
+        },
+        [20] = {
+            [1] = getObjectFromGUID("c1690e"),
+            [2] = getObjectFromGUID("dda9cd"),
+            [3] = getObjectFromGUID("b66ab8"),
+            [4] = getObjectFromGUID("11f576"),
+            [5] = getObjectFromGUID("0b18e7"),
+            [6] = getObjectFromGUID("f99639")
+        },
+        [21] = {
+            [1] = getObjectFromGUID("63b0c9"),
+            [2] = getObjectFromGUID("34efd1"),
+            [3] = getObjectFromGUID("386ab3"),
+            [4] = getObjectFromGUID("3ecf1b"),
+            [5] = getObjectFromGUID("0f24ca"),
+            [6] = getObjectFromGUID("9b212b")
+        },
+    }
+
+    cityZones = mergeTables(brownCityZones, yellowCityZones, greenCityZones, redCityZones, blueCityZones, purpleCityZones)
+
+    playerScoreTracker = {
+        Yellow = nil,
+        Red = nil,
+        Blue = nil,
+        White = nil,
+        Green = nil,
+        Purple = nil
+    }
+end
+
+function updatePlayerScores()
+    local playerScores = countPlayerScores()
+    displayPlayerScores(playerScores)
+    updateCurrentStep(playerScores)
+end
+
+function countPlayerScores()
+    local playerScores = {Yellow = 0, Red = 0, White = 0, Green = 0, Purple = 0, Blue = 0}
+    for _, zone in pairs(cityZones) do
+        zonePlayers = {}
+        for _, obj in pairs(zone.getObjects()) do
+            housePlayer = getHousePlayer(obj)
+            if housePlayer then
+                if zonePlayers[housePlayer] then
+                    broadcastToAll(housePlayer .. " has a city with multiple plants.", Table)
+                else
+                    playerScores[housePlayer] = playerScores[housePlayer] + 1
+                    zonePlayers[housePlayer] = true
+                end
+            end
+        end
+    end
+    return playerScores
+end
+
+function displayPlayerScores(playerScores)
+    for color, score in pairs(playerScores) do
+        if score and score > 0 then
+            playersOnSpace = {}
+            for _, posZone in ipairs(scoringTrackZones[score]) do
+                if #posZone.getObjects() > 0 then
+                    playersOnSpace[getHousePlayer(posZone.getObjects()[1])] = true
+                end
+            end
+            if not playersOnSpace[color] then
+                for _, posZone in ipairs(scoringTrackZones[score]) do
+                    if #posZone.getObjects() == 0 then
+                        if playerScoreTracker[color] then
+                            playerScoreTracker[color].setPositionSmooth(posZone.getPosition(), false, false)
+                            if score >= 7 then
+                                playerScoreTracker[color].setRotationSmooth({0, 90, 0}, false, false)
+                            end
+                        else
+                            playerScoreTracker[color] = playerBags[color].takeObject({
+                                position = posZone.getPosition()
+                            })
+                            playerScoreTracker[color].setLock(true)
+                        end
+                        break
+                    end
+                end
+            end
+        end
+    end
+end
+
+function updateCurrentStep(playerScores)
+    local endRoundRegion = getObjectFromGUID("dc40bd")
+    local step2 = false
+    for _, score in pairs(playerScores) do
+        if score >= 7 then
+            step2 = true
+            break
+        end
+    end
+    if step2 then
+        endRoundRegion.call("setCurrentStep", 2)
+    else
+        endRoundRegion.call("setCurrentStep", 1)
+    end
+end
+
+function getHousePlayer(house)
+    houseTint = house.getColorTint()
+    for attr, val in pairs(houseTint) do
+        houseTint[attr] = round(val, 6)
+    end
+
+    for playerColor, playerHouseTint in pairs(playerColorToHouses) do
+        if houseTint.r == playerHouseTint.r and houseTint.g == playerHouseTint.g and houseTint.b == playerHouseTint.b then
+            return playerColor
+        end
+    end
+end
