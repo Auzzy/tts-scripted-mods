@@ -27,3 +27,25 @@ function round(num, numDecimalPlaces)
     local mult = 10 ^ (numDecimalPlaces or 0)
     return math.floor(num * mult + 0.5) / mult
 end
+
+-- Because Lua doesn't have a built-in sleep for some reason.
+function sleep(seconds)
+    local clock = os.clock
+    local startTime = clock()
+    while clock() - startTime <= seconds do end
+end
+
+
+function sortedCardInsert(cardArray, newCard)
+    for index = #cardArray, 1, -1 do
+        local cardObj = cardArray[index]
+        local cardNum = allPowerPlants[cardObj.guid].Number
+        local nextCardNum = allPowerPlants[newCard.guid].Number
+        if cardNum > nextCardNum then
+            cardArray[index + 1] = cardObj
+        else
+            cardArray[index + 1] = newCard
+            break
+        end
+    end
+end
