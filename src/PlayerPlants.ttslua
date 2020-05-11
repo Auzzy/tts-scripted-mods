@@ -1,0 +1,77 @@
+function loadPlayerPlants(save_state)
+    whitePowerPlantZones = {
+        getObjectFromGUID("fd8de1"),
+        getObjectFromGUID("13db64"),
+        getObjectFromGUID("ebc316")
+    }
+    redPowerPlantZones = {
+        getObjectFromGUID("503e13"),
+        getObjectFromGUID("194eb9"),
+        getObjectFromGUID("7be221")
+    }
+    bluePowerPlantZones = {
+        getObjectFromGUID("0112eb"),
+        getObjectFromGUID("0c390f"),
+        getObjectFromGUID("fd03d9")
+    }
+    greenPowerPlantZones = {
+        getObjectFromGUID("d2a4a2"),
+        getObjectFromGUID("f03e02"),
+        getObjectFromGUID("d5e0d7")
+    }
+    yellowPowerPlantZones = {
+        getObjectFromGUID("fd6a66"),
+        getObjectFromGUID("9b96ee"),
+        getObjectFromGUID("ae2580")
+    }
+    purplePowerPlantZones = {
+        getObjectFromGUID("63965e"),
+        getObjectFromGUID("d0101c"),
+        getObjectFromGUID("870a56")
+    }
+
+    powerPlantMetadata = {
+        3={type="Oil", input=2, output=1},
+        4={type="Coal", input=2, output=1},
+        5={type="Hybrid", input=2, output=1}
+        6={type="Garbage", input=1, output=1},
+        7={type="Oil", input=3, output=2},
+        8={type="Coal", input=3, output=2},
+        9={type="Oil", input=1, output=1},
+        10={type="Coal", input=2, output=2},
+        11={type="Uranium", input=1, output=2},
+        12={type="Hybrid", input=2, output=2},
+        13={type="Wind", input=0, output=1},
+        14={type="Garbage", input=2, output=2},
+        15={type="Coal", input=2, output=3},
+        16={type="Oil", input=2, output=3},
+        17={type="Uranium", input=1, output=2},
+        18={type="Wind", input=0, output=2},
+        19={type="Garbage", input=2, output=3},
+        20={type="Coal", input=3, output=5},
+        21={type="Hybrid", input=2, output=4},
+        22={type="Wind", input=0, output=2},
+        23={type="Uranium", input=1, output=3},
+        24={type="Garbage", input=2, output=4},
+        25={type="Coal", input=2, output=5},
+        26={type="Oil", input=2, output=5},
+        27={type="Wind", input=0, output=3},
+        28={type="Uranium", input=1, output=4},
+        29={type="Hybrid", input=1, output=4},
+        30={type="Garbage", input=3, output=6},
+        31={type="Coal", input=3, output=6},
+        32={type="Oil", input=3, output=6},
+        33={type="Wind", input=0, output=4},
+        34={type="Uranium", input=1, output=5},
+        35={type="Oil", input=1, output=5},
+        36={type="Coal", input=3, output=7},
+        37={type="Wind", input=0, output=4},
+        38={type="Garbage", input=3, output=7},
+        39={type="Uranium", input=1, output=6},
+        40={type="Oil", input=2, output=6},
+        42={type="Coal", input=2, output=6},
+        44={type="Wind", input=0, output=5},
+        46={type="Hybrid", input=3, output=7},
+        50={type="Wind", input=0, output=6}
+    }
+end

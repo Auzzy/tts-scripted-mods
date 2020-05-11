@@ -162,6 +162,571 @@
     "PassTurns": true,
     "TurnColor": ""
   },
+  "VectorLines": [
+    {
+      "points3": [
+        {
+          "x": 25,
+          "y": 0.9711354,
+          "z": -20
+        },
+        {
+          "x": 29.88,
+          "y": 0.971135139,
+          "z": -20
+        },
+        {
+          "x": 29.88,
+          "y": 0.9711348,
+          "z": -24.88
+        },
+        {
+          "x": 25,
+          "y": 0.9711348,
+          "z": -24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": 20,
+          "y": 0.9711354,
+          "z": -20
+        },
+        {
+          "x": 24.88,
+          "y": 0.971135139,
+          "z": -20
+        },
+        {
+          "x": 24.88,
+          "y": 0.9711348,
+          "z": -24.88
+        },
+        {
+          "x": 20,
+          "y": 0.9711348,
+          "z": -24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": 15,
+          "y": 0.9711354,
+          "z": -20
+        },
+        {
+          "x": 19.88,
+          "y": 0.971135139,
+          "z": -20
+        },
+        {
+          "x": 19.88,
+          "y": 0.9711348,
+          "z": -24.88
+        },
+        {
+          "x": 15,
+          "y": 0.9711348,
+          "z": -24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+
+    {
+      "points3": [
+        {
+          "x": -25,
+          "y": 0.9711354,
+          "z": -20
+        },
+        {
+          "x": -29.88,
+          "y": 0.971135139,
+          "z": -20
+        },
+        {
+          "x": -29.88,
+          "y": 0.9711348,
+          "z": -24.88
+        },
+        {
+          "x": -25,
+          "y": 0.9711348,
+          "z": -24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -20,
+          "y": 0.9711354,
+          "z": -20
+        },
+        {
+          "x": -24.88,
+          "y": 0.971135139,
+          "z": -20
+        },
+        {
+          "x": -24.88,
+          "y": 0.9711348,
+          "z": -24.88
+        },
+        {
+          "x": -20,
+          "y": 0.9711348,
+          "z": -24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -15,
+          "y": 0.9711354,
+          "z": -20
+        },
+        {
+          "x": -19.88,
+          "y": 0.971135139,
+          "z": -20
+        },
+        {
+          "x": -19.88,
+          "y": 0.9711348,
+          "z": -24.88
+        },
+        {
+          "x": -15,
+          "y": 0.9711348,
+          "z": -24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+
+    {
+      "points3": [
+        {
+          "x": 25,
+          "y": 0.9711354,
+          "z": 20
+        },
+        {
+          "x": 29.88,
+          "y": 0.971135139,
+          "z": 20
+        },
+        {
+          "x": 29.88,
+          "y": 0.9711348,
+          "z": 24.88
+        },
+        {
+          "x": 25,
+          "y": 0.9711348,
+          "z": 24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": 20,
+          "y": 0.9711354,
+          "z": 20
+        },
+        {
+          "x": 24.88,
+          "y": 0.971135139,
+          "z": 20
+        },
+        {
+          "x": 24.88,
+          "y": 0.9711348,
+          "z": 24.88
+        },
+        {
+          "x": 20,
+          "y": 0.9711348,
+          "z": 24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": 15,
+          "y": 0.9711354,
+          "z": 20
+        },
+        {
+          "x": 19.88,
+          "y": 0.971135139,
+          "z": 20
+        },
+        {
+          "x": 19.88,
+          "y": 0.9711348,
+          "z": 24.88
+        },
+        {
+          "x": 15,
+          "y": 0.9711348,
+          "z": 24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+
+    {
+      "points3": [
+        {
+          "x": -25,
+          "y": 0.9711354,
+          "z": 20
+        },
+        {
+          "x": -29.88,
+          "y": 0.971135139,
+          "z": 20
+        },
+        {
+          "x": -29.88,
+          "y": 0.9711348,
+          "z": 24.88
+        },
+        {
+          "x": -25,
+          "y": 0.9711348,
+          "z": 24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -20,
+          "y": 0.9711354,
+          "z": 20
+        },
+        {
+          "x": -24.88,
+          "y": 0.971135139,
+          "z": 20
+        },
+        {
+          "x": -24.88,
+          "y": 0.9711348,
+          "z": 24.88
+        },
+        {
+          "x": -20,
+          "y": 0.9711348,
+          "z": 24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -15,
+          "y": 0.9711354,
+          "z": 20
+        },
+        {
+          "x": -19.88,
+          "y": 0.971135139,
+          "z": 20
+        },
+        {
+          "x": -19.88,
+          "y": 0.9711348,
+          "z": 24.88
+        },
+        {
+          "x": -15,
+          "y": 0.9711348,
+          "z": 24.88
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+
+    {
+      "points3": [
+        {
+          "x": -40,
+          "y": 0.9711354,
+          "z": 15
+        },
+        {
+          "x": -40,
+          "y": 0.971135139,
+          "z": 19.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": 19.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": 15
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -40,
+          "y": 0.9711354,
+          "z": 10
+        },
+        {
+          "x": -40,
+          "y": 0.971135139,
+          "z": 14.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": 14.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": 10
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -40,
+          "y": 0.9711354,
+          "z": 5
+        },
+        {
+          "x": -40,
+          "y": 0.971135139,
+          "z": 9.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": 9.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": 5
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+
+    {
+      "points3": [
+        {
+          "x": -40,
+          "y": 0.9711354,
+          "z": -15
+        },
+        {
+          "x": -40,
+          "y": 0.971135139,
+          "z": -19.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": -19.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": -15
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -40,
+          "y": 0.9711354,
+          "z": -10
+        },
+        {
+          "x": -40,
+          "y": 0.971135139,
+          "z": -14.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": -14.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": -10
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -40,
+          "y": 0.9711354,
+          "z": -5
+        },
+        {
+          "x": -40,
+          "y": 0.971135139,
+          "z": -9.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": -9.88
+        },
+        {
+          "x": -35.12,
+          "y": 0.9711348,
+          "z": -5
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    }
+  ],
   "ObjectStates": [
     {
       "Name": "DeckCustom",
@@ -21916,6 +22481,672 @@
       "GUID": "9b212b"
     },
     {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": 17.41324,
+        "posY": 0.9611349,
+        "posZ": -22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "White Power Plant - Left",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "fd8de1"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": 22.4242256,
+        "posY": 0.9611349,
+        "posZ": -22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "White Power Plant - Middle",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "13db64"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": 27.4475021,
+        "posY": 0.9611349,
+        "posZ": -22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "White Power Plant - Right",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ebc316"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -17.41324,
+        "posY": 0.9611349,
+        "posZ": -22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Red Power Plant - Right",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "7be221"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -22.4242256,
+        "posY": 0.9611349,
+        "posZ": -22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Red Power Plant - Middle",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "194eb9"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -27.4475021,
+        "posY": 0.9611349,
+        "posZ": -22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Red Power Plant - Left",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "503e13"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": 17.41324,
+        "posY": 0.9611349,
+        "posZ": 22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Blue Power Plant - Right",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "fd03d9"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": 22.4242256,
+        "posY": 0.9611349,
+        "posZ": 22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Blue Power Plant - Middle",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "0c390f"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": 27.4475021,
+        "posY": 0.9611349,
+        "posZ": 22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Blue Power Plant - Left",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "0112eb"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -17.41324,
+        "posY": 0.9611349,
+        "posZ": 22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Green Power Plant - Left",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d2a4a2"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -22.4242256,
+        "posY": 0.9611349,
+        "posZ": 22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Green Power Plant - Middle",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f03e02"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -27.4475021,
+        "posY": 0.9611349,
+        "posZ": 22.426712,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Green Power Plant - Right",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d5e0d7"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -37.55251,
+        "posY": 0.9611349,
+        "posZ": -17.4309467,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Purple Power Plant - Right",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "870a56"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -37.55251,
+        "posY": 0.9611349,
+        "posZ": -12.4439583,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Purple Power Plant - Middle",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d0101c"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -37.55251,
+        "posY": 0.9611349,
+        "posZ": -7.462505,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Purple Power Plant - Left",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "63965e"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -37.55251,
+        "posY": 0.9611349,
+        "posZ": 17.4309467,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Yellow Power Plant - Left",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "fd6a66"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -37.55251,
+        "posY": 0.9611349,
+        "posZ": 12.4439583,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Yellow Power Plant - Middle",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "9b96ee"
+    },
+    {
+      "Name": "ScriptingTrigger",
+      "Transform": {
+        "posX": -37.55251,
+        "posY": 0.9611349,
+        "posZ": 7.462505,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.88,
+        "scaleY": 5.1,
+        "scaleZ": 4.88
+      },
+      "Nickname": "Yellow Power Plant - Right",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.509803951
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ae2580"
+    },
+    {
       "Name": "3DText",
       "Transform": {
         "posX": 19.0,
@@ -24093,6 +25324,228 @@
         "x": -9.23713571E-07,
         "y": 3.07318775E-12,
         "z": 1.69787245E-06
+      }
+    },
+
+    {
+      "Position": {
+        "x": 17.41324,
+        "y": 0.9611349,
+        "z": -22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 180.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": 22.4242256,
+        "y": 0.9611349,
+        "z": -22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 180.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": 27.4475021,
+        "y": 0.9611349,
+        "z": -22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 180.0,
+        "z": 0.0
+      }
+    },
+
+    {
+      "Position": {
+        "x": -17.41324,
+        "y": 0.9611349,
+        "z": -22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 180.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": -22.4242256,
+        "y": 0.9611349,
+        "z": -22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 180.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": -27.4475021,
+        "y": 0.9611349,
+        "z": -22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 180.0,
+        "z": 0.0
+      }
+    },
+
+    {
+      "Position": {
+        "x": 17.41324,
+        "y": 0.9611349,
+        "z": 22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": 22.4242256,
+        "y": 0.9611349,
+        "z": 22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": 27.4475021,
+        "y": 0.9611349,
+        "z": 22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+
+    {
+      "Position": {
+        "x": -17.41324,
+        "y": 0.9611349,
+        "z": 22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": -22.4242256,
+        "y": 0.9611349,
+        "z": 22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": -27.4475021,
+        "y": 0.9611349,
+        "z": 22.426712
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+
+    {
+      "Position": {
+        "x": -37.55251,
+        "y": 0.9611349,
+        "z": -17.4309467
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": -37.55251,
+        "y": 0.9611349,
+        "z": -12.4439583
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": -37.55251,
+        "y": 0.9611349,
+        "z": -7.462505
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
+      }
+    },
+
+    {
+      "Position": {
+        "x": -37.55251,
+        "y": 0.9611349,
+        "z": 17.4309467
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": -37.55251,
+        "y": 0.9611349,
+        "z": 12.4439583
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Position": {
+        "x": -37.55251,
+        "y": 0.9611349,
+        "z": 7.462505
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
       }
     }
   ],
