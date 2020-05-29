@@ -1,0 +1,117 @@
+function loadTurnOrderTracker(saved_data)
+    turnOrderTrack = {
+        [1] = getObjectFromGUID("08cda7"),
+        [2] = getObjectFromGUID("8381af"),
+        [3] = getObjectFromGUID("8b2ec3"),
+        [4] = getObjectFromGUID("7d644d"),
+        [5] = getObjectFromGUID("2b5e74"),
+        [6] = getObjectFromGUID("deb721")
+    }
+
+    playerPowerPlantZones = {
+        Yellow = {
+            getObjectFromGUID("fd6a66"),
+            getObjectFromGUID("9b96ee"),
+            getObjectFromGUID("ae2580")
+        },
+        Red = {
+            getObjectFromGUID("7be221"),
+            getObjectFromGUID("194eb9"),
+            getObjectFromGUID("503e13")
+        },
+        Blue = {
+            getObjectFromGUID("fd03d9"),
+            getObjectFromGUID("0c390f"),
+            getObjectFromGUID("0112eb")
+        },
+        White = {
+            getObjectFromGUID("fd8de1"),
+            getObjectFromGUID("13db64"),
+            getObjectFromGUID("ebc316")
+        },
+        Green = {
+            getObjectFromGUID("d2a4a2"),
+            getObjectFromGUID("f03e02"),
+            getObjectFromGUID("d5e0d7")
+        },
+        Purple = {
+            getObjectFromGUID("870a56"),
+            getObjectFromGUID("d0101c"),
+            getObjectFromGUID("63965e")
+        }
+    }
+
+    playerTurnOrderTracker = {
+        Yellow = nil,
+        Red = nil,
+        Blue = nil,
+        White = nil,
+        Green = nil,
+        Purple = nil
+    }
+end
+
+function initTurnOrder()
+    playerBags = Global.getTable("playerBags")
+
+    local turnOrder = shuffle(getSeatedPlayers())
+    for index, color in ipairs(turnOrder) do
+        playerTurnOrderTracker[color] = playerBags[color].takeObject({
+            position = turnOrderTrack[index].getPosition(),
+            rotation = {0, 90, 0}
+        })
+        playerTurnOrderTracker[color].setLock(true)
+    end
+end
+
+function updateTurnOrder()
+    local currentTurnOrder = getCurrentTurnOrder()
+    local bestPlants = getBestPowerPlantByPlayer()
+    local playerScores = Global.call("countPlayerScores")
+
+    local newTurnOrder = getSeatedPlayers()
+    table.sort(
+        newTurnOrder,
+        function(player1, player2)
+            if playerScores[player1] == playerScores[player2] then
+                return bestPlants[player1].Number > bestPlants[player2].Number
+            else
+                return playerScores[player1] > playerScores[player2]
+            end
+        end)
+
+    for index, player in ipairs(newTurnOrder) do
+        playerTurnOrderTracker[player].setPositionSmooth(turnOrderTrack[index].getPosition(), false, false)
+    end
+end
+
+function getCurrentTurnOrder()
+    local turnOrder = {}
+    for _, zone in ipairs(turnOrderTrack) do
+        for _, obj in pairs(zone.getObjects()) do
+            table.insert(turnOrder, Global.call("getHousePlayer", obj))
+        end
+    end
+    return turnOrder
+end
+
+function getBestPowerPlantByPlayer()
+    local bestPlants = {}
+    for _, color in pairs(getSeatedPlayers()) do
+        bestPlants[color] = nil
+        for _, zone in pairs(playerPowerPlantZones[color]) do
+            for _, obj in pairs(zone.getObjects()) do
+                powerPlant = allPowerPlants[obj.guid]
+                if powerPlant then
+                    if bestPlants[color] == nil or powerPlant.Number > bestPlants[color].Number then
+                        bestPlants[color] = powerPlant
+                    end
+                end
+            end
+        end
+    end
+    return bestPlants
+end
+
+function isBefore(player1)
+end

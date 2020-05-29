@@ -80,6 +80,7 @@ function performBureaucracy()
     removeObsoletePlants(ppMarket)
     adjustMarketHighest(ppMarket)
     replenishResources()
+    updateTurnOrder()
 end
 
 function removeObsoletePlants(ppMarket)

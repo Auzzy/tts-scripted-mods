@@ -1,5 +1,6 @@
 #include src/ReplenishResources
 #include src/PlantMarket
+#include src/TurnOrderTracker
 #include src/utils
 
 function onSave()   --We make a table of data we want to save. WE CAN ONLY SAVE 1 TABLE.
@@ -11,6 +12,7 @@ function onload(saved_data)
 
     loadPlantMarket(saved_data)
     loadReplenishResources(saved_data)
+    loadTurnOrderTracker(saved_data)
 
     self.createButton({label="Start", click_function="initGame", function_owner=self, position={0.0, 0.5, 0.0}, rotation={0, 180, 0}, height=600, width=1400, font_size=280})
 end
@@ -19,6 +21,7 @@ function initGame()
     initPlantMarket()
     initReplenishResources()
     removePowerPlants()
+    initTurnOrder()
 end
 
 function removePowerPlants()
